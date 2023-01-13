@@ -1,5 +1,3 @@
-
-
 * {
   margin: 0;
   padding: 0;
@@ -57,7 +55,7 @@ section {
 }
 
 .a-social:hover {
-  color: #496958;
+  color: #660000;
 }
 
 .navbar {
@@ -125,26 +123,33 @@ section {
   --clip-top: calc(var(--stack-height) * var(--index));
   --clip-bottom: calc(var(--stack-height) * var(--inverse-index));
   clip-path: inset(var(--clip-top) 0 var(--clip-bottom) 0);
-  animation: stack 740ms cubic-bezier(.46,.29,0,1.24) 2 backwards calc(var(--index) * 520ms), glitch 2s ease infinite 1s alternate-reverse;
+  animation: stack 740ms cubic-bezier(.46,.29,0,1.24) 2 backwards calc(var(--index) * 520ms), glitch 3s ease infinite 2s alternate-reverse;
 }
 
 .stack span:nth-child(odd) { --glitch-translate: 8px; }
 .stack span:nth-child(even) { --glitch-translate: -8px; }
 
-.stack span:hover {
+
+.stack span:hover, .stack a:hover, .a-social:hover {
   --stack-height: calc(100% / var(--stacks) - 1px);
   --inverse-index: calc(calc(var(--stacks) - 1) - var(--index));
   --clip-top: calc(var(--stack-height) * var(--index));
   --clip-bottom: calc(var(--stack-height) * var(--inverse-index));
   clip-path: inset(var(--clip-top) 0 var(--clip-bottom) 0);
-  animation: stack 240ms cubic-bezier(.46,.29,0,1.24) 2 backwards calc(var(--index) * 320ms), glitch 1s ease infinite 1s alternate-reverse;
+  animation: stack 340ms cubic-bezier(0,.2,0,1.2) 2 backwards calc(var(--index) * 520ms), glitch 1s ease infinite 0.5s alternate-reverse;
 }
+
+.stack span:hover:nth-child(odd) { --glitch-translate: 50px; }
+.stack span:hover:nth-child(even) { --glitch-translate: -50px; }
+
+.stack a:hover:nth-child(odd) { --glitch-translate: 20px; }
+.stack a:hover:nth-child(even) { --glitch-translate: -20px; }
 
 @keyframes stack {
   0% {
     opacity: 0;
     transform: translateX(-50%);
-    text-shadow: -2px 3px 0 #c91658, 2px -3px 0 #1dcf20;
+    text-shadow: -2px 3px 0 #B20000, 2px -3px 0 #888A88;
   };
   60% {
     opacity: 0.5;
@@ -153,7 +158,7 @@ section {
   80% {
     transform: none;
     opacity: 1;
-    text-shadow: 2px -3px 0 #c91658, -2px 3px 0 #1dcf20;
+    text-shadow: 2px -3px 0 #B20000, -2px 3px 0 #888A88;
   }
   100% {
     text-shadow: none;
@@ -162,11 +167,11 @@ section {
 
 @keyframes glitch {
   0% {
-    text-shadow: -2px 3px 0 #c91658, 2px -3px 0 #1dcf20;
+    text-shadow: -2px 3px 0 #B20000, 2px -3px 0 #888A88;
     transform: translate(var(--glitch-translate));
   }
   2% {
-    text-shadow: 2px -3px 0 #c91658, -2px 3px 0 #1dcf20;
+    text-shadow: 2px -3px 0 #B20000, -2px 3px 0 #888A88;
   }
   4%, 100% {  text-shadow: none; transform: none; }
 }
