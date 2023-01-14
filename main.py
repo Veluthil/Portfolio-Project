@@ -9,14 +9,19 @@ def home():
     return render_template("index.html")
 
 
-@app.route("/header")
-def header():
-    return render_template("header.html")
+@app.route("/about")
+def about():
+    return render_template("about.html")
 
 
-@app.route("/footer")
-def footer():
-    return render_template("footer.html")
+@app.route("/projects")
+def projects():
+    return render_template("projects.html")
+
+
+@app.route("/contact")
+def contact():
+    return render_template("contact.html")
 
 
 if __name__ == "__main__":

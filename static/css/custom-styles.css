@@ -11,7 +11,6 @@
 
 body {
   color: #86b08c;
-  margin: 0;
   font-family: 'Teko', sans-serif;
   font-size: 1.5rem;
   display: absolute;
@@ -44,9 +43,10 @@ p {
 
 section {
     width: 100vh;
-    display: absolute;
+    display: relative;
     padding-right: 65%;
 }
+
 
 .a-social {
   color: black;
@@ -87,13 +87,18 @@ section {
     width: 2rem;
 }
 
+.home {
+    width: 100%;
+}
+
+
 .title-container {
   color: var(--color);
   font-size: 2.5rem;
   display: flex;
   flex-direction: column;
   position: relative;
-  padding-top: 25vh;
+  padding-top: 15vh;
   margin-right: 100%;
   font-family: 'Orbitron', sans-serif;
 }
@@ -102,10 +107,11 @@ section {
     max-width: 100vh;
     width: 100vh;
     padding-bottom: 4rem;
+    margin-left: 30vh;
 }
 
 .subtext {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 
 .stack {
@@ -113,11 +119,11 @@ section {
   grid-template-columns: 1fr;
 }
 
-.stack span {
+.stack h1 {
   font-weight: bold;
   grid-row-start: 1;
   grid-column-start: 1;
-  font-size: 4rem;
+  font-size: 5.5rem;
   --stack-height: calc(100% / var(--stacks) - 1px);
   --inverse-index: calc(calc(var(--stacks) - 1) - var(--index));
   --clip-top: calc(var(--stack-height) * var(--index));
@@ -126,11 +132,11 @@ section {
   animation: stack 740ms cubic-bezier(.46,.29,0,1.24) 2 backwards calc(var(--index) * 520ms), glitch 3s ease infinite 2s alternate-reverse;
 }
 
-.stack span:nth-child(odd) { --glitch-translate: 8px; }
-.stack span:nth-child(even) { --glitch-translate: -8px; }
+.stack h1:nth-child(odd) { --glitch-translate: 8px; }
+.stack h1:nth-child(even) { --glitch-translate: -8px; }
 
 
-.stack span:hover, .stack a:hover, .a-social:hover {
+.stack h1:hover, .stack a:hover, .a-social:hover {
   --stack-height: calc(100% / var(--stacks) - 1px);
   --inverse-index: calc(calc(var(--stacks) - 1) - var(--index));
   --clip-top: calc(var(--stack-height) * var(--index));
@@ -139,8 +145,8 @@ section {
   animation: stack 340ms cubic-bezier(0,.2,0,1.2) 2 backwards calc(var(--index) * 520ms), glitch 1s ease infinite 0.5s alternate-reverse;
 }
 
-.stack span:hover:nth-child(odd) { --glitch-translate: 50px; }
-.stack span:hover:nth-child(even) { --glitch-translate: -50px; }
+.stack h1:hover:nth-child(odd) { --glitch-translate: 50px; }
+.stack h1:hover:nth-child(even) { --glitch-translate: -50px; }
 
 .stack a:hover:nth-child(odd) { --glitch-translate: 20px; }
 .stack a:hover:nth-child(even) { --glitch-translate: -20px; }
