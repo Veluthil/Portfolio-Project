@@ -13,21 +13,6 @@ body {
   overflow-x: hidden;
 }
 
-h2 {
-  font-size: 2.5rem;
-  font-weight: normal;
-  color: #855563;
-  font-family: 'Orbitron', sans-serif;
-  text-transform: uppercase;
-  padding-bottom: 50px;
-}
-
-h3 {
-  color: #496958;
-  font-family: 'Orbitron', sans-serif;
-  padding-bottom: 30px;
-}
-
 p {
     line-height: 2;
 }
@@ -65,7 +50,7 @@ section {
 }
 
 .footer-container {
-    display: relative;
+
     font-size: 1rem;
     width: 100%;
     text-align: center;
@@ -83,7 +68,6 @@ section {
     height: 85vh;
     color: var(--color);
     padding-top: 15vh;
-
     font-family: 'Orbitron', sans-serif;
 }
 
@@ -96,7 +80,7 @@ section {
 .right-paragraph {
     margin-top: 30vh;
     display: relative;
-    text-align: right;
+    text-align: justify;
 }
 
 .stack {
