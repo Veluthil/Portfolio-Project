@@ -1,23 +1,14 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 :root {
   --background: #060608;
   --color: #FAFAFA;
 }
 
 body {
-  color: #86b08c;
   font-family: 'Teko', sans-serif;
-  font-size: 1.5rem;
-  display: absolute;
-  justify-content: center;
+  font-size: 1.3rem;
+  display: relative;
   align-items: center;
   background: var(--background);
-  width: 100%;
   height: 100vh;
   overflow-x: hidden;
 }
@@ -42,7 +33,7 @@ p {
 }
 
 section {
-    width: 100vh;
+    width: 100%;
     display: relative;
     padding-right: 65%;
 }
@@ -60,10 +51,7 @@ section {
 
 .navbar {
     background: transparent;
-}
-
-.navbar-brand {
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 
 .nav-item {
@@ -79,7 +67,7 @@ section {
 .footer-container {
     display: relative;
     font-size: 1rem;
-    width: 100vh;
+    width: 100%;
     text-align: center;
 }
 
@@ -88,42 +76,39 @@ section {
 }
 
 .home {
-    width: 100%;
-}
-
-
-.title-container {
-  color: var(--color);
-  font-size: 2.5rem;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  padding-top: 15vh;
-  margin-right: 100%;
-  font-family: 'Orbitron', sans-serif;
+    width: 200%;
 }
 
 .title-row {
-    max-width: 100vh;
-    width: 100vh;
-    padding-bottom: 4rem;
-    margin-left: 30vh;
+    height: 85vh;
+    color: var(--color);
+    padding-top: 15vh;
+
+    font-family: 'Orbitron', sans-serif;
 }
 
 .subtext {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  width: 100%;
+  max-width: 100%;
+}
+
+.right-paragraph {
+    margin-top: 30vh;
+    display: relative;
+    text-align: right;
 }
 
 .stack {
   display: grid;
-  grid-template-columns: 1fr;
+  max-width: 100%;
 }
 
 .stack h1 {
   font-weight: bold;
   grid-row-start: 1;
   grid-column-start: 1;
-  font-size: 5.5rem;
+  font-size: 5rem;
   --stack-height: calc(100% / var(--stacks) - 1px);
   --inverse-index: calc(calc(var(--stacks) - 1) - var(--index));
   --clip-top: calc(var(--stack-height) * var(--index));
@@ -136,7 +121,7 @@ section {
 .stack h1:nth-child(even) { --glitch-translate: -8px; }
 
 
-.stack h1:hover, .stack a:hover, .a-social:hover {
+.stack h1:hover, .stack a:hover {
   --stack-height: calc(100% / var(--stacks) - 1px);
   --inverse-index: calc(calc(var(--stacks) - 1) - var(--index));
   --clip-top: calc(var(--stack-height) * var(--index));
@@ -148,8 +133,6 @@ section {
 .stack h1:hover:nth-child(odd) { --glitch-translate: 50px; }
 .stack h1:hover:nth-child(even) { --glitch-translate: -50px; }
 
-.stack a:hover:nth-child(odd) { --glitch-translate: 20px; }
-.stack a:hover:nth-child(even) { --glitch-translate: -20px; }
 
 @keyframes stack {
   0% {
