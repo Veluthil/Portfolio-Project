@@ -3,54 +3,61 @@
 
 <head>
 
-  <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width"/>
     <title>Martyna Boradyn</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
-  <!-- Custom fonts for this template -->
-  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
-  <!-- Custom styles for this template -->
-  <link href="{{ url_for('static', filename='css/styles.css')}}" rel="stylesheet">
-  <link rel="stylesheet" href="static/css/custom-styles.css">
+    <!-- Custom fonts for this template -->
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet'
+          type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+          rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename='css/styles.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/custom-styles.css">
     <script src="https://kit.fontawesome.com/75165f36e7.js" crossorigin="anonymous"></script>
 
 
     <link rel="icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Silkscreen&family=Teko&display=swap" rel="stylesheet">  </head>
-
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Silkscreen&family=Teko&display=swap"
+          rel="stylesheet">
 </head>
 
 <body>
 
-  <!-- Navigation -->
+<!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark me-auto fixed-top" id="mainNav">
-  <div class="container">
-<!--    <a class="navbar-brand" href="#">MBoradyn</a>-->
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item stack">
-        <a class="nav-link active" style="--index: 0;" aria-current="page" href="{{ url_for('home') }}">Home</a>
-        </li>
-        <li class="nav-item stack">
-        <a class="nav-link active" style="--index: 0;" href="{{ url_for('about') }}">About</a>
-        </li>
-        <li class="nav-item stack">
-        <a class="nav-link active" style="--index: 0;" href="{{ url_for('projects') }}">Projects</a>
-        </li>
-        <li class="nav-item stack">
-        <a class="nav-link active" style="--index: 0;" href="{{ url_for('contact') }}">Contact</a>
-        </li>
-      </ul>
+    <div class="container">
+        <!--    <a class="navbar-brand" href="#">MBoradyn</a>-->
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item stack">
+                    <a class="nav-link active" style="--index: 0;" aria-current="page"
+                       href="{{ url_for('home') }}">Home</a>
+                </li>
+                <li class="nav-item stack">
+                    <a class="nav-link active" style="--index: 0;" href="{{ url_for('about') }}">About</a>
+                </li>
+                <li class="nav-item stack">
+                    <a class="nav-link active" style="--index: 0;" href="{{ url_for('projects') }}">Projects</a>
+                </li>
+                <li class="nav-item stack">
+                    <a class="nav-link active" style="--index: 0;" href="{{ url_for('contact') }}">Contact</a>
+                </li>
+            </ul>
+        </div>
     </div>
-  </div>
 </nav>
