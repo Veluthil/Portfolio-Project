@@ -29,10 +29,10 @@
         </div>
     </footer>
 </section>
-<div>
-    <div class="cursor-outer"></div>
-    <div class="cursor-inner"></div><div>
-            <script>
+<div class="cursor-outer"></div>
+<div class="cursor-inner"></div>
+
+<script>
         const cursor = document.querySelector(".cursor-inner");
         const cursor2 = document.querySelector(".cursor-outer");
         document.addEventListener("mousemove", e=>{
@@ -42,15 +42,17 @@
             cursor2.style.top = e.pageY + "px";
             cursor2.style.left = e.pageX + "px";
         })
-            </script>
-        </div>
-        <!-- Bootstrap core JavaScript -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-                crossorigin="anonymous"></script>
 
-        <!-- Custom scripts for this template -->
-        <script src="{{ url_for('static', filename='js/custom-js.js')}}"></script>
 
-        </body>
-        </html>
+</script>
+
+<!-- Bootstrap core JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+<!-- Custom scripts for this template -->
+<script src="{{ url_for('static', filename='js/custom-js.js')}}"></script>
+
+</body>
+</html>

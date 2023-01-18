@@ -97,7 +97,8 @@ section {
 
 footer {
     position: absolute;
-    padding-top: 4rem;
+    padding-top: 5rem;
+    margin-bottom: 0;
     width: 100%;
 }
 

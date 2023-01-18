@@ -1,3 +1,61 @@
 {% include "header.html" %}
 
+<div class="container main">
+    <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+            <p style="color: white">Feel free to write me anytime:</p>
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+            {% for message in messages %}
+            <p style="color: red:">{{ message }}</p>
+            {% endfor %}
+            {% endif %}
+            {% endwith %}
+            <form name="sentMessage" id="contactForm" action="{{ url_for('contact') }}" method="post" novalidate>
+                <div class="control-group">
+                    <div class="form-group floating-label-form-group controls">
+                        <input type="text" class="form-control bg-dark border-0 text-light" placeholder="Name" name="name" id="name"
+                               data-validation-required-message="Please enter your name." required>
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="form-group floating-label-form-group controls">
+                        <input type="email" class="form-control bg-dark border-0 text-light" placeholder="Email Address" name="email" id="email"
+                               data-validation-required-message="Please enter your email address." required>
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                        <input type="tel" class="form-control bg-dark border-0 text-light" placeholder="Phone Number *(optional)" name="phone"
+                               id="phone"
+                               required data-validation-required-message="Please enter your phone number.">
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="form-group floating-label-form-group controls">
+                        <textarea rows="5" class="form-control bg-dark border-0 text-light" placeholder="Message" name="message" id="message"
+                                  data-validation-required-message="Please enter a message." required></textarea>
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+                <br>
+                <div id="success"></div>
+                <button type="submit" class="btn btn-primary btn-dark border-0" id="sendMessageButton">Send</button>
+            </form>
+            <br>
+            {% if msg_sent: %}
+            <p>Message sent. Thanks!</p>
+            <p>I will answer you as soon as possible.</p>
+            {% endif %}
+            <br>
+            <p>You can also reach me through any of the platforms below:</p>
+        </div>
+    </div>
+</div>
+
+<hr>
+
 {% include "footer.html" %}
