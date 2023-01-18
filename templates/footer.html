@@ -1,48 +1,56 @@
 <!-- Footer -->
 <section class="footer-section">
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 mx-auto">
-                <ul class="list-inline text-center">
-                    <li class="list-inline-item">
-                        <a class="a-social" href="https://www.linkedin.com/in/martyna-boradyn-6b890824b/">
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mx-auto stack">
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item">
+                            <a class="a-social" href="https://www.linkedin.com/in/martyna-boradyn-6b890824b/"
+                               style="--index: 0;">
                 <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-brands fa-linkedin-in fa-stack-1x fa-inverse"></i>
+                  <i class="fa-brands fa-linkedin-in"></i>
                 </span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="a-social" href="https://github.com/Veluthil">
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="a-social" href="https://github.com/Veluthil" style="--index: 0;">
                 <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  <i class="fa-brands fa-github"></i>
                 </span>
-                        </a>
-                    </li>
-                </ul>
-                <p class="copyright text-muted">Copyright &copy; Martyna Boradyn
-                    <script>document.write(/\d{4}/.exec(Date())[0])</script>
-                </p>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; Martyna Boradyn
+                        <script>document.write(/\d{4}/.exec(Date())[0])</script>
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 </section>
+<div>
+    <div class="cursor-outer"></div>
+    <div class="cursor-inner"></div><div>
+            <script>
+        const cursor = document.querySelector(".cursor-inner");
+        const cursor2 = document.querySelector(".cursor-outer");
+        document.addEventListener("mousemove", e=>{
+            cursor.style.top = e.pageY + "px";
+            cursor.style.left = e.pageX + "px";
 
-<!-- Bootstrap core JavaScript -->
-<!--  <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js')}}"></script>-->
-<!--  <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-        crossorigin="anonymous"></script>
+            cursor2.style.top = e.pageY + "px";
+            cursor2.style.left = e.pageX + "px";
+        })
+            </script>
+        </div>
+        <!-- Bootstrap core JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+                crossorigin="anonymous"></script>
 
+        <!-- Custom scripts for this template -->
+        <script src="{{ url_for('static', filename='js/custom-js.js')}}"></script>
 
-
-<!-- Custom scripts for this template -->
-<!--  <script src="{{ url_for('static', filename='js/clean-blog.min.js')}}"></script>-->
-
-</body>
-
-</html>
+        </body>
+        </html>

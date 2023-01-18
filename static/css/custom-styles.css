@@ -3,6 +3,10 @@
     --color: #FAFAFA;
 }
 
+* {
+    cursor: none;
+}
+
 html {
     height: 100%;
 }
@@ -22,17 +26,51 @@ p {
 
 section {
     width: 100%;
-    padding-right: 65%;
+}
+
+[class^="cursor"]{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+.cursor-outer {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #fff;
+  transition: all .08s ease-out;
+}
+
+.cursor-inner {
+  width: 7px;
+  height: 7px;
+  background: #fff;
+ }
+
+.content:hover ~ .cursor-outer {
+    width: 90px;
+    height: 90px;
+    background: #fff;
+    mix-blend-mode: difference;
+}
+
+.content:hover ~ .cursor-inner {
+    opacity: 0;
 }
 
 .a-social {
-    color: black;
+    color: #FAFAFA;
     font-family: 'Orbitron', sans-serif;
+    font-size: 0.9rem;
     text-decoration: none;
 }
 
 .a-social:hover {
-    color: #660000;
+    color: #A6A6A6;
 }
 
 .navbar {
@@ -41,8 +79,9 @@ section {
 }
 
 .nav-item {
-    margin: 0rem 1.5rem;
+    margin: 0 0 0 1.5rem;
 }
+
 
 @media (max-width: 768px) {
     nav.navbar {
@@ -58,7 +97,7 @@ section {
 
 footer {
     position: absolute;
-    padding-top: 50px;
+    padding-top: 4rem;
     width: 100%;
 }
 
@@ -68,18 +107,15 @@ footer .list-inline {
 }
 
 footer .copyright {
-    font-size:14px;
-    margin-bottom:0;
-    text-align:center
-}
-
-.fa-stack {
-    width: 1.5rem;
+    font-size: 14px;
+    margin-bottom: 0;
+    text-align: center;
 }
 
 .main {
     color: var(--color);
     padding-top: 15vh;
+    padding-left: 4.5vh;
     font-family: 'Orbitron', sans-serif;
 }
 
@@ -90,8 +126,10 @@ footer .copyright {
 }
 
 .right-paragraph {
-    margin-top: 30vh;
+    margin-top: 20vh;
+    margin-bottom: 5vh;
     text-align: justify;
+    padding: 0 1.9rem;
 }
 
 .stack {
@@ -116,7 +154,7 @@ footer .copyright {
 .stack h1:nth-child(even) { --glitch-translate: -8px; }
 
 
-.stack h1:hover, .stack a:hover {
+.stack h1:hover {
     --stack-height: calc(100% / var(--stacks) - 1px);
     --inverse-index: calc(calc(var(--stacks) - 1) - var(--index));
     --clip-top: calc(var(--stack-height) * var(--index));
@@ -125,9 +163,14 @@ footer .copyright {
     animation: stack 340ms cubic-bezier(0,.2,0,1.2) 2 backwards calc(var(--index) * 520ms), glitch 1s ease infinite 0.5s alternate-reverse;
 }
 
+.stack a:hover {
+    color: #A6A6A6;
+    clip-path: inset(var(--clip-top) 0 var(--clip-bottom) 0);
+    animation: stack 440ms cubic-bezier(0,.2,0,1.2), glitch 2s ease infinite 0.5s alternate-reverse;
+}
+
 .stack h1:hover:nth-child(odd) { --glitch-translate: 50px; }
 .stack h1:hover:nth-child(even) { --glitch-translate: -50px; }
-
 
 @keyframes stack {
     0% {
