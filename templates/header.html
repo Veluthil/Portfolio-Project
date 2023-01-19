@@ -35,8 +35,10 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark me-auto fixed-top" id="mainNav">
     <div class="container">
-        <!--    <a class="navbar-brand" href="#">MBoradyn</a>-->
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+        {% if not main_page: %}
+            <a class="navbar-brand" href="{{ url_for('home') }}">M. Boradyn</a>
+        {% endif %}
+        <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                 aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

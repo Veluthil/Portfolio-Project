@@ -27,24 +27,24 @@
                 </div>
             </div>
         </div>
-    </footer>
-</section>
-<div class="cursor-outer"></div>
+        <div class="cursor-outer"></div>
 <div class="cursor-inner"></div>
 
 <script>
         const cursor = document.querySelector(".cursor-inner");
         const cursor2 = document.querySelector(".cursor-outer");
         document.addEventListener("mousemove", e=>{
-            cursor.style.top = e.pageY + "px";
-            cursor.style.left = e.pageX + "px";
+            cursor.style.top = e.clientY + "px";
+            cursor.style.left = e.clientX + "px";
 
-            cursor2.style.top = e.pageY + "px";
-            cursor2.style.left = e.pageX + "px";
+            cursor2.style.top = e.clientY + "px";
+            cursor2.style.left = e.clientX + "px";
         })
 
-
 </script>
+    </footer>
+</section>
+
 
 <!-- Bootstrap core JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"

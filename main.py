@@ -37,7 +37,8 @@ def strip_invalid_html(content):
 
 @app.route("/")
 def home():
-    return render_template("index.html")
+    main_page = True
+    return render_template("index.html", main_page=main_page)
 
 
 @app.route("/about")

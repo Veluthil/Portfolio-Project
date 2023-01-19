@@ -1,5 +1,17 @@
 {% include "header.html" %}
-
+<div class="container main">
+    <p class="contact">Let's work together!</p>
+</div>
+<br>
+<div class="container main">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit, fuga atque ea nobis sit soluta odio, adipisci quas excepturi maxime quae totam ducimus consectetur?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium recusandae illo eaque architecto error, repellendus iusto reprehenderit, doloribus, minus sunt. Numquam at quae voluptatum in officia voluptas voluptatibus, minus!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequuntur magnam, excepturi aliquid ex itaque esse est vero natus quae optio aperiam soluta voluptatibus corporis atque iste neque sit tempora!</p>
+      </div>
+    </div>
+  </div>
 <div class="container main">
     <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
@@ -7,28 +19,28 @@
             {% with messages = get_flashed_messages() %}
             {% if messages %}
             {% for message in messages %}
-            <p style="color: red:">{{ message }}</p>
+            <p style="color: red">{{ message }}</p>
             {% endfor %}
             {% endif %}
             {% endwith %}
             <form name="sentMessage" id="contactForm" action="{{ url_for('contact') }}" method="post" novalidate>
                 <div class="control-group">
                     <div class="form-group floating-label-form-group controls">
-                        <input type="text" class="form-control bg-dark border-0 text-light" placeholder="Name" name="name" id="name"
+                        <input type="text" class="form-control border-0 text-light" placeholder="Name" name="name" id="name"
                                data-validation-required-message="Please enter your name." required>
                         <p class="help-block text-danger"></p>
                     </div>
                 </div>
                 <div class="control-group">
                     <div class="form-group floating-label-form-group controls">
-                        <input type="email" class="form-control bg-dark border-0 text-light" placeholder="Email Address" name="email" id="email"
+                        <input type="email" class="form-control border-0 text-light" placeholder="Email Address" name="email" id="email"
                                data-validation-required-message="Please enter your email address." required>
                         <p class="help-block text-danger"></p>
                     </div>
                 </div>
                 <div class="control-group">
                     <div class="form-group col-xs-12 floating-label-form-group controls">
-                        <input type="tel" class="form-control bg-dark border-0 text-light" placeholder="Phone Number *(optional)" name="phone"
+                        <input type="tel" class="form-control border-0 text-light" placeholder="Phone Number *(optional)" name="phone"
                                id="phone"
                                required data-validation-required-message="Please enter your phone number.">
                         <p class="help-block text-danger"></p>
@@ -36,14 +48,14 @@
                 </div>
                 <div class="control-group">
                     <div class="form-group floating-label-form-group controls">
-                        <textarea rows="5" class="form-control bg-dark border-0 text-light" placeholder="Message" name="message" id="message"
+                        <textarea rows="5" class="form-control border-1 text-light" placeholder="Message" name="message" id="message"
                                   data-validation-required-message="Please enter a message." required></textarea>
                         <p class="help-block text-danger"></p>
                     </div>
                 </div>
                 <br>
                 <div id="success"></div>
-                <button type="submit" class="btn btn-primary btn-dark border-0" id="sendMessageButton">Send</button>
+                <button type="submit" class="btn btn-dark border-1" style="cursor: none" id="sendMessageButton">Send</button>
             </form>
             <br>
             {% if msg_sent: %}
@@ -52,6 +64,9 @@
             {% endif %}
             <br>
             <p>You can also reach me through any of the platforms below:</p>
+            <a class="platform" href="https://github.com/Veluthil">GitHub.</a>
+            <br>
+            <a class="platform" href="https://www.linkedin.com/in/martyna-boradyn-6b890824b/">LinkedIn.</a>
         </div>
     </div>
 </div>

@@ -69,19 +69,24 @@ section {
     text-decoration: none;
 }
 
-.a-social:hover {
-    color: #A6A6A6;
-}
-
 .navbar {
     background: transparent;
     font-size: 1.7rem;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    padding-top: 5rem;
+    background: transparent;
 }
 
 .nav-item {
     margin: 0 0 0 1.5rem;
 }
 
+ul.navbar-nav a:hover {
+    color: red !important;
+}
 
 @media (max-width: 768px) {
     nav.navbar {
@@ -165,7 +170,7 @@ footer .copyright {
 }
 
 .stack a:hover {
-    color: #A6A6A6;
+    color: red;
     clip-path: inset(var(--clip-top) 0 var(--clip-bottom) 0);
     animation: stack 440ms cubic-bezier(0,.2,0,1.2), glitch 2s ease infinite 0.5s alternate-reverse;
 }
@@ -202,4 +207,32 @@ footer .copyright {
       text-shadow: 2px -3px 0 #B20000, -2px 3px 0 #888A88;
     }
     4%, 100% {  text-shadow: none; transform: none; }
+}
+
+.contact {
+    font-size: 4rem;
+}
+
+.btn {
+    padding-top: 10px;
+    background-color: black;
+}
+
+.form-control {
+    background-color: black;
+}
+
+.form-control:focus {
+    background-color: #3B3B3B;
+}
+
+.platform {
+    color: red;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.platform:hover {
+    color: white;
+    text-decoration: none;
 }
