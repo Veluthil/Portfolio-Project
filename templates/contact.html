@@ -5,13 +5,13 @@
 <br>
 <div class="container main">
     <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
-          <p>I am open for freelance opportunities for any individuals or companies.</p>
-          <p>Whether you want to ask me anything, just get in touch or you are willing to work with me, feel free to
-          use the form below.</p>
-      </div>
+        <div class="col-lg-8 col-md-10 mx-auto">
+            <p>I am open for freelance opportunities for any individuals or companies.</p>
+            <p>Whether you want to ask me anything, just get in touch or you are willing to work with me, feel free to
+                use the form below.</p>
+        </div>
     </div>
-  </div>
+</div>
 <div class="container main">
     <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
@@ -27,21 +27,24 @@
             <form name="sentMessage" id="contactForm" action="{{ url_for('contact') }}" method="post" novalidate>
                 <div class="control-group">
                     <div class="form-group floating-label-form-group controls">
-                        <input type="text" class="form-control border-0 text-light" placeholder="Name" name="name" id="name"
+                        <input type="text" class="form-control border-0 text-light" placeholder="Name" name="name"
+                               id="name"
                                data-validation-required-message="Please enter your name." required>
                         <p class="help-block text-danger"></p>
                     </div>
                 </div>
                 <div class="control-group">
                     <div class="form-group floating-label-form-group controls">
-                        <input type="email" class="form-control border-0 text-light" placeholder="Email Address" name="email" id="email"
+                        <input type="email" class="form-control border-0 text-light" placeholder="Email Address"
+                               name="email" id="email"
                                data-validation-required-message="Please enter your email address." required>
                         <p class="help-block text-danger"></p>
                     </div>
                 </div>
                 <div class="control-group">
                     <div class="form-group col-xs-12 floating-label-form-group controls">
-                        <input type="tel" class="form-control border-0 text-light" placeholder="Phone Number *(optional)" name="phone"
+                        <input type="tel" class="form-control border-0 text-light"
+                               placeholder="Phone Number *(optional)" name="phone"
                                id="phone"
                                required data-validation-required-message="Please enter your phone number.">
                         <p class="help-block text-danger"></p>
@@ -49,14 +52,16 @@
                 </div>
                 <div class="control-group">
                     <div class="form-group floating-label-form-group controls">
-                        <textarea rows="5" class="form-control border-0 text-light" placeholder="Message" name="message" id="message"
+                        <textarea rows="5" class="form-control border-0 text-light" placeholder="Message" name="message"
+                                  id="message"
                                   data-validation-required-message="Please enter a message." required></textarea>
                         <p class="help-block text-danger"></p>
                     </div>
                 </div>
                 <br>
                 <div id="success"></div>
-                <button type="submit" class="btn btn-dark border-1" style="cursor: none" id="sendMessageButton">Send</button>
+                <button type="submit" class="btn btn-dark border-1" style="cursor: none" id="sendMessageButton">Send
+                </button>
             </form>
             <br>
             {% if msg_sent: %}
