@@ -1,21 +1,22 @@
 {% include "header.html" %}
 <div class="container main">
-    <p class="contact">Let's work together!</p>
+    <h1 class="contact">Let's work together!</h1>
 </div>
 <br>
 <div class="container main">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit, fuga atque ea nobis sit soluta odio, adipisci quas excepturi maxime quae totam ducimus consectetur?</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium recusandae illo eaque architecto error, repellendus iusto reprehenderit, doloribus, minus sunt. Numquam at quae voluptatum in officia voluptas voluptatibus, minus!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequuntur magnam, excepturi aliquid ex itaque esse est vero natus quae optio aperiam soluta voluptatibus corporis atque iste neque sit tempora!</p>
+          <p>I am open for freelance opportunities for any individuals or companies.</p>
+          <p>Whether you want to ask me anything, just get in touch or you are willing to work with me, feel free to
+          use the form below.</p>
       </div>
     </div>
   </div>
 <div class="container main">
     <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-            <p style="color: white">Feel free to write me anytime:</p>
+            <h2 style="color: white">Send me a message:</h2>
+            <br>
             {% with messages = get_flashed_messages() %}
             {% if messages %}
             {% for message in messages %}
@@ -48,7 +49,7 @@
                 </div>
                 <div class="control-group">
                     <div class="form-group floating-label-form-group controls">
-                        <textarea rows="5" class="form-control border-1 text-light" placeholder="Message" name="message" id="message"
+                        <textarea rows="5" class="form-control border-0 text-light" placeholder="Message" name="message" id="message"
                                   data-validation-required-message="Please enter a message." required></textarea>
                         <p class="help-block text-danger"></p>
                     </div>
@@ -63,7 +64,8 @@
             <p>I will answer you as soon as possible.</p>
             {% endif %}
             <br>
-            <p>You can also reach me through any of the platforms below:</p>
+            <h3>You can also reach me through any of the platforms below:</h3>
+            <br>
             <a class="platform" href="https://github.com/Veluthil">GitHub.</a>
             <br>
             <a class="platform" href="https://www.linkedin.com/in/martyna-boradyn-6b890824b/">LinkedIn.</a>

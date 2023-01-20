@@ -16,12 +16,13 @@ body {
     padding: 0;
     box-sizing: border-box;
     background: var(--background);
-    font-family: 'Teko', sans-serif;
+    font-family: 'Orbitron', sans-serif;
     font-size: 1.3rem;
 }
 
 p {
     line-height: 2;
+    font-family: 'Red Hat Display', sans-serif;
 }
 
 section {
@@ -74,12 +75,6 @@ section {
     font-size: 1.7rem;
 }
 
-.navbar-brand {
-    font-size: 2rem;
-    padding-top: 5rem;
-    background: transparent;
-}
-
 .nav-item {
     margin: 0 0 0 1.5rem;
 }
@@ -95,16 +90,10 @@ ul.navbar-nav a:hover {
 }
 
 .footer-section {
+    padding-top: 15vh;
     position: relative;
     width: 100%;
     item-align: center;
-}
-
-footer {
-    position: absolute;
-    padding-top: 5rem;
-    margin-bottom: 0;
-    width: 100%;
 }
 
 footer .list-inline {
@@ -118,11 +107,37 @@ footer .copyright {
     text-align: center;
 }
 
+.index {
+    position: relative;
+    min-height: 95vh;
+    color: var(--color);
+    padding-top: 18vh;
+    padding-left: 4.5vh;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.index-wrap {
+    padding-bottom: 2.5rem;
+}
+
+.footer {
+     position: absolute;
+     bottom: 0;
+     width: 100%;
+     height: 2.5rem;
+}
+
 .main {
     color: var(--color);
     padding-top: 15vh;
     padding-left: 4.5vh;
     font-family: 'Orbitron', sans-serif;
+}
+
+.copyright-main {
+    font-size: 14px;
+    margin-bottom: 0;
+    text-align: center;
 }
 
 .subtext {
@@ -209,8 +224,33 @@ footer .copyright {
     4%, 100% {  text-shadow: none; transform: none; }
 }
 
+.project {
+    color: red;
+    text-decoration: none;
+    font-size: 3rem;
+}
+
+.hyperlink {
+    color: white;
+}
+
+.hyperlink:hover {
+    color: red;
+}
+
+.project:hover {
+    color: white;
+    text-decoration: none;
+}
+
 .contact {
     font-size: 4rem;
+}
+
+.floating-label-form-group {
+    margin-bottom: 0;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #3B3B3B;
 }
 
 .btn {
@@ -219,6 +259,7 @@ footer .copyright {
 }
 
 .form-control {
+    font-family: 'Red Hat Display', sans-serif;
     background-color: black;
 }
 
