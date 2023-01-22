@@ -85,7 +85,7 @@ h3:hover ~ .cursor-inner {
 }
 
 .navbar {
-    background: transparent;
+    background: black;
     font-size: 1.7rem;
 }
 
