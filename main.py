@@ -53,6 +53,7 @@ def projects():
 
 @app.route("/contact", methods=["GET", "POST"])
 def contact():
+    contact_page = True
     if request.method == "POST":
         data = request.form
         if data["name"] and data["email"] and data["message"] != "":
@@ -62,9 +63,9 @@ def contact():
                       strip_invalid_html(data["message"]))
         else:
             flash("You can't send a message without filling name, email and message fields.")
-            return redirect(url_for("contact", msg_sent=False))
-        return render_template("contact.html", msg_sent=True)
-    return render_template("contact.html", msg_sent=False)
+            return redirect(url_for("contact", msg_sent=False, contact_page=contact_page))
+        return render_template("contact.html", msg_sent=True, contact_page=contact_page)
+    return render_template("contact.html", msg_sent=False, contact_page=contact_page)
 
 
 def send_mail(name, email, phone, message):

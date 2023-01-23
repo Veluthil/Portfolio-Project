@@ -36,8 +36,6 @@ h3 {
     font-family: 'Red Hat Display', sans-serif;
 }
 
-/* HOME PAGE */
-
 section {
     width: 100%;
 }
@@ -67,14 +65,14 @@ section {
   background: #fff;
  }
 
-h3:hover ~ .cursor-outer {
+p:hover ~ .cursor-outer {
     width: 90px;
     height: 90px;
     background: #fff;
     mix-blend-mode: difference;
 }
 
-h3:hover ~ .cursor-inner {
+p:hover ~ .cursor-inner {
     opacity: 0;
 }
 
@@ -153,6 +151,13 @@ footer .copyright {
     padding-top: 15vh;
     padding-left: 4.5vh;
     font-family: 'Orbitron', sans-serif;
+}
+
+.main-p {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.3;
 }
 
 .copyright-main {
@@ -264,7 +269,7 @@ footer .copyright {
 }
 
 .hyperlink:hover {
-    color: red;
+    color: white;
 }
 
 .project:hover {
