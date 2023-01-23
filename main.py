@@ -6,8 +6,7 @@ import os
 from dotenv import load_dotenv
 import bleach
 
-
-#DOTENV
+# DOTENV
 load_dotenv("D:/Programming/PythonEnV/.env.txt")
 MY_EMAIL = os.getenv("MY_EMAIL")
 PASSWORD = os.getenv("PASSWORD")
