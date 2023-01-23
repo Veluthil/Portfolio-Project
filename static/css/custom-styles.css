@@ -1,3 +1,4 @@
+/* MAIN */
 :root {
     --background: #060608;
     --color: #FAFAFA;
@@ -35,13 +36,13 @@ h3 {
     font-family: 'Red Hat Display', sans-serif;
 }
 
+/* HOME PAGE */
+
 section {
     width: 100%;
 }
 
-.subtitle {
-    font-size: 2.5rem;
-}
+/* CURSOR */
 
 [class^="cursor"]{
     position: fixed;
@@ -77,6 +78,8 @@ h3:hover ~ .cursor-inner {
     opacity: 0;
 }
 
+/* NAVBAR */
+
 .a-social {
     color: #FAFAFA;
     font-family: 'Orbitron', sans-serif;
@@ -102,6 +105,8 @@ ul.navbar-nav a:hover {
       background: black;
   }
 }
+
+/* FOOTER */
 
 .footer-section {
     padding-top: 15vh;
@@ -140,6 +145,8 @@ footer .copyright {
      width: 100%;
      height: 2.5rem;
 }
+
+/* HOME PAGE */
 
 .main {
     color: var(--color);
@@ -238,6 +245,14 @@ footer .copyright {
     4%, 100% {  text-shadow: none; transform: none; }
 }
 
+/* ABOUT PAGE */
+
+.subtitle {
+    font-size: 2.5rem;
+}
+
+/* PROJECTS PAGE */
+
 .project {
     color: red;
     text-decoration: none;
@@ -256,6 +271,8 @@ footer .copyright {
     color: white;
     text-decoration: none;
 }
+
+/* CONTACT PAGE */
 
 .contact {
     font-size: 4rem;
