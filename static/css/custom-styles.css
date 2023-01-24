@@ -223,7 +223,7 @@ footer .copyright {
     0% {
       opacity: 0;
       transform: translateX(-50%);
-      text-shadow: -2px 3px 0 #B20000, 2px -3px 0 #888A88;
+      text-shadow: -2px 3px 0 #B20000, 2px -3px 0 #2E2E2E;
     };
     60% {
       opacity: 0.5;
@@ -232,7 +232,7 @@ footer .copyright {
     80% {
       transform: none;
       opacity: 1;
-      text-shadow: 2px -3px 0 #B20000, -2px 3px 0 #888A88;
+      text-shadow: 2px -3px 0 #B20000, -2px 3px 0 #2E2E2E;
     }
     100% {
       text-shadow: none;
@@ -241,11 +241,11 @@ footer .copyright {
 
 @keyframes glitch {
     0% {
-      text-shadow: -2px 3px 0 #B20000, 2px -3px 0 #888A88;
+      text-shadow: -2px 3px 0 #B20000, 2px -3px 0 #2E2E2E;
       transform: translate(var(--glitch-translate));
     }
     2% {
-      text-shadow: 2px -3px 0 #B20000, -2px 3px 0 #888A88;
+      text-shadow: 2px -3px 0 #B20000, -2px 3px 0 #2E2E2E;
     }
     4%, 100% {  text-shadow: none; transform: none; }
 }
