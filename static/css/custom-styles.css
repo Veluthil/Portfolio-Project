@@ -219,16 +219,6 @@ footer .copyright {
     }
 }
 
-.box {
-    position: absolute;
-    margin-left: 120vh;
-    margin-top: 25vh;
-    z-index: -1;
-    height: 40vh;
-    width: 63vh;
-    border: 12px solid #121212;
-}
-
 .main {
     color: var(--color);
     padding-top: 15vh;
