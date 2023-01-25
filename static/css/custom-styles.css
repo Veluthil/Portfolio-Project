@@ -163,7 +163,7 @@ footer .copyright {
     width: 2px;
     height: 100%;
     top: 0;
-    left: 50%;
+    left: -10%;
     background: rgba(255, 255, 255, 0.1);
     overflow: hidden;
     z-index: -1;
@@ -173,11 +173,11 @@ footer .copyright {
     content: "";
     display: block;
     position: absolute;
-    height: 15vh;
+    height: 40vh;
     width: 100%;
     top: -50%;
     left: 0;
-    background: linear-gradient(to bottom, black 0%, white 75%, white 100%);
+    background: linear-gradient(to bottom, darkred 0%, red 50%, darkred 100%);
     -webkit-animation: drop 7s 0s infinite;
             animation: drop 7s 0s infinite;
     -webkit-animation-fill-mode: none;
@@ -187,42 +187,14 @@ footer .copyright {
 }
 
 .line:nth-child(1) {
-    margin-left: -50%;
+    margin-left: 10%;
 }
 
 .line:nth-child(1)::after {
-    -webkit-animation-delay: 2s;
-            animation-delay: 2s;
-}
-
-.line:nth-child(3) {
-    margin-left: -39%;
-}
-
-.line:nth-child(3)::after {
-    -webkit-animation-delay: 2.5s;
-            animation-delay: 2.5s;
-}
-
-.line:nth-child(4) {
-    margin-left: 35%;
-}
-
-.line:nth-child(4)::after {
     -webkit-animation-delay: 3s;
             animation-delay: 3s;
 }
 
-.line:nth-child(5) {
-    margin-left: -8%;
-    position: relative;
-    z-index: 2;
-}
-
-.line:nth-child(5)::after {
-    -webkit-animation-delay: 1.5s;
-            animation-delay: 1.5s;
-}
 
 @-webkit-keyframes drop {
     0% {
