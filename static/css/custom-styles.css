@@ -244,7 +244,7 @@ footer .copyright {
 .right-paragraph {
     margin-top: 28vh;
     text-align: justify;
-    padding: 1.5rem 1.5rem 0 2.5rem;
+    padding: 1.5rem 1.5rem 0 0;
     z-index: 1;
     position: relative;
     background: black;
@@ -342,6 +342,7 @@ footer .copyright {
 
 .hyperlink:hover {
     color: white;
+    font-weight: 900;
 }
 
 .project:hover {
