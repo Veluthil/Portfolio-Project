@@ -40,6 +40,10 @@ section {
     width: 100%;
 }
 
+hr {
+    border: 1px rgba(255, 255, 255, 0.1);
+}
+
 /* CURSOR */
 
 [class^="cursor"]{
@@ -92,6 +96,7 @@ p:hover ~ .cursor-inner {
 
 .nav-item {
     margin: 0 0 0 1.5rem;
+    background: black;
 }
 
 ul.navbar-nav a:hover {
@@ -214,6 +219,16 @@ footer .copyright {
     }
 }
 
+.box {
+    position: absolute;
+    margin-left: 120vh;
+    margin-top: 25vh;
+    z-index: -1;
+    height: 40vh;
+    width: 63vh;
+    border: 12px solid #121212;
+}
+
 .main {
     color: var(--color);
     padding-top: 15vh;
@@ -247,7 +262,6 @@ footer .copyright {
     padding: 1.5rem 1.5rem 0 0;
     z-index: 1;
     position: relative;
-    background: black;
 }
 
 .stack {
@@ -380,6 +394,7 @@ footer .copyright {
     color: red;
     text-decoration: none;
     font-size: 1.5rem;
+    line-height: 3rem;
 }
 
 .platform:hover {
