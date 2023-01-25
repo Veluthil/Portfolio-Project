@@ -35,7 +35,11 @@
 <body>
 <!-- Navigation -->
 <div id="banner" class="container-fluid">
+    {% if main_page: %}
+    <nav class="navbar navbar-expand-lg navbar-dark me-auto fixed-top" id="mainNav" style="background: transparent">
+    {% else: %}
     <nav class="navbar navbar-expand-lg navbar-dark me-auto fixed-top" id="mainNav">
+    {% endif %}
         <div class="container">
             <!--    <a class="navbar-brand" href="#">MBoradyn</a>-->
             <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-bs-toggle="collapse"
