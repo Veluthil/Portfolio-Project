@@ -82,13 +82,6 @@ p:hover ~ .cursor-inner {
 
 /* NAVBAR */
 
-.a-social {
-    color: #FAFAFA;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 0.9rem;
-    text-decoration: none;
-}
-
 .navbar {
     background: black;
     font-size: 1.7rem;
@@ -110,6 +103,13 @@ ul.navbar-nav a:hover {
 }
 
 /* FOOTER */
+
+.a-social {
+    color: #FAFAFA;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
 
 .footer-section {
     padding-top: 15vh;
@@ -155,6 +155,7 @@ footer .copyright {
     margin-left: 20vh;
     color: red;
     font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
     font-size: 1rem;
     text-decoration: none;
 }
@@ -244,18 +245,17 @@ footer .copyright {
 .main-p {
     font-family: 'Red Hat Display', sans-serif;
     font-size: 1.4rem;
-    font-weight: 600;
 }
 
 .copyright-main {
     font-size: 12px;
-    margin-bottom: 0;
+    right: 1vh;
+    margin-top: 10vh;
     text-align: right;
-    z-index: -2;
 }
 
 .subtext {
-    font-size: 3rem;
+    font-size: 3.5rem;
     width: 100%;
     max-width: 100%;
     background: black;
@@ -267,6 +267,7 @@ footer .copyright {
     padding: 1.5rem 1.5rem 0 0;
     z-index: 1;
     position: relative;
+    background: black;
 }
 
 .stack {
