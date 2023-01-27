@@ -36,6 +36,10 @@ h3 {
     font-family: 'Red Hat Display', sans-serif;
 }
 
+h4 {
+    margin-top: 1.8vh
+}
+
 section {
     width: 100%;
 }
@@ -152,7 +156,7 @@ footer .copyright {
 .name {
     position: fixed;
     bottom: 10vh;
-    margin-left: 20vh;
+    margin-left: 15vh;
     color: red;
     font-family: 'Orbitron', sans-serif;
     font-weight: 600;
@@ -234,6 +238,45 @@ footer .copyright {
       top: 110%;
     }
 }
+
+
+#btn1 {
+  top: 100px;
+}
+
+#btn2 {
+  top: 200px;
+}
+
+div.button-social {
+  background-color: red;
+  color: #2c3e50;
+  border: none;
+  border-radius: 100px;
+  width: 500px;
+  height: 50px;
+  position: fixed;
+  right: -435px;
+  transition: .7s ease;
+  text-align: center;
+}
+
+div.button-social:hover {
+  background-color: black;
+  color: white;
+  position: fixed;
+  right: 0px;
+  width: 400px;
+  border-radius: 0px;
+  box-shadow: 0px 5px 0px red;
+}
+
+div.button-social:active {
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: 0s;
+  color: rgba(255, 255, 255, 0.1);
+}
+
 
 .main {
     color: var(--color);
@@ -406,4 +449,14 @@ footer .copyright {
 .platform:hover {
     color: white;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 1100px) {
+  .name {
+    display: none;
+  }
+
+  .ribbons {
+    display: none;
+  }
 }
