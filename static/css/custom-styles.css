@@ -380,7 +380,6 @@ footer .copyright {
 
     .stack h1 {
         font-size: 4rem;
-        z-index: -1;
         animation: none;
         color: red;
     }
@@ -392,6 +391,7 @@ footer .copyright {
     .right-paragraph {
         padding: 0;
         width: 100%;
+        text-align: right;
     }
 
     .copyright-main {

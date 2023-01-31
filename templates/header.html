@@ -6,7 +6,7 @@
 <head>
 
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
     <title>Martyna Boradyn</title>
 
     <!-- Bootstrap core CSS -->
@@ -37,35 +37,35 @@
 <div id="banner" class="container-fluid">
     {% if main_page: %}
     <nav class="navbar navbar-expand-lg navbar-dark me-auto fixed-top" id="mainNav" style="background: transparent">
-    {% else: %}
-    <nav class="navbar navbar-expand-lg navbar-dark me-auto fixed-top" id="mainNav">
-    {% endif %}
-        <div class="container">
-            <!--    <a class="navbar-brand" href="#">MBoradyn</a>-->
-            <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item stack">
-                        <a class="nav-link active" style="--index: 0;" aria-current="page"
-                           href="{{ url_for('home') }}">Home</a>
-                    </li>
-                    <li class="nav-item stack">
-                        <a class="nav-link active" style="--index: 0;" href="{{ url_for('about') }}">About</a>
-                    </li>
-                    <li class="nav-item stack">
-                        <a class="nav-link active" style="--index: 0;" href="{{ url_for('projects') }}">Projects</a>
-                    </li>
-                    <li class="nav-item stack">
-                        <a class="nav-link active" style="--index: 0;" href="{{ url_for('contact') }}">Contact</a>
-                    </li>
-                </ul>
+        {% else: %}
+        <nav class="navbar navbar-expand-lg navbar-dark me-auto fixed-top" id="mainNav">
+            {% endif %}
+            <div class="container">
+                <!--    <a class="navbar-brand" href="#">MBoradyn</a>-->
+                <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item stack">
+                            <a class="nav-link active" style="--index: 0;" aria-current="page"
+                               href="{{ url_for('home') }}">Home</a>
+                        </li>
+                        <li class="nav-item stack">
+                            <a class="nav-link active" style="--index: 0;" href="{{ url_for('about') }}">About</a>
+                        </li>
+                        <li class="nav-item stack">
+                            <a class="nav-link active" style="--index: 0;" href="{{ url_for('projects') }}">Projects</a>
+                        </li>
+                        <li class="nav-item stack">
+                            <a class="nav-link active" style="--index: 0;" href="{{ url_for('contact') }}">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
