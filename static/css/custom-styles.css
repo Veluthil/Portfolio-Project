@@ -377,6 +377,8 @@ footer .copyright {
     .stack h1 {
         font-size: 3.5rem;
         z-index: -1;
+        animation: none;
+        color: red;
     }
 
     .subtext {
@@ -385,10 +387,6 @@ footer .copyright {
 
     .index {
         max-width: 768px;
-    }
-
-    .right-paragraph {
-        padding: 2rem;
     }
 }
 
