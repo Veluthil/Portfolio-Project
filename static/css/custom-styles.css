@@ -419,7 +419,6 @@ div.button-social:active {
     text-decoration: none;
     font-size: 3rem;
     display: block;
-	width: 1000px;
 	position: relative;
 	line-height: 5vh;
 	margin-bottom: 4vh;
@@ -481,6 +480,10 @@ a.project:hover > div {
 
 @media only screen and (max-width: 1100px) {
     a.project: {
+        display: none;
+    }
+
+    div img {
         display: none;
     }
 
