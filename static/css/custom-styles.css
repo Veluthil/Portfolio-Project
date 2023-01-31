@@ -19,11 +19,13 @@ body {
     background: var(--background);
     font-family: 'Orbitron', sans-serif;
     font-size: 1.3rem;
+    text-align: justify;
 }
 
 p {
     line-height: 2;
     font-family: 'Red Hat Display', sans-serif;
+    text-align: justify;
 }
 
 h2 {
