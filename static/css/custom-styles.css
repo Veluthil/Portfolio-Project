@@ -374,6 +374,10 @@ footer .copyright {
 }
 
 @media only screen and (max-width: 768px) {
+    .index {
+        padding: 3rem 1rem;
+    }
+
     .stack h1 {
         font-size: 4rem;
         z-index: -1;
@@ -388,6 +392,10 @@ footer .copyright {
     .right-paragraph {
         padding: 0;
         width: 100%;
+    }
+
+    .copyright-main {
+        text-align: center;
     }
 }
 
