@@ -368,10 +368,19 @@ footer .copyright {
 @media only screen and (max-width: 1100px) {
     .stack h1 {
         font-size: 3.5rem;
+        z-index: -1;
     }
 
     .subtext {
         font-size: 3rem;
+    }
+
+    .index {
+        max-width: 768px;
+    }
+
+    .right-paragraph {
+        padding: 2rem;
     }
 }
 
