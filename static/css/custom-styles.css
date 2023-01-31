@@ -60,9 +60,17 @@ hr {
     pointer-events: none;
 }
 
-@media only screen and (max-width: 1000px) {
-    body .cursor .cursor-outer .cursor-inner {
-        display: 'none'
+@media only screen and (max-width: 768px) {
+    body .cursor {
+        display: none;
+    }
+
+    .cursor-outer {
+        display: none;
+    }
+
+    .cursor-inner {
+        display: none;
     }
 }
 
