@@ -375,14 +375,18 @@ footer .copyright {
 
 @media only screen and (max-width: 768px) {
     .stack h1 {
-        font-size: 3.5rem;
+        font-size: 4rem;
         z-index: -1;
         animation: none;
         color: red;
     }
 
     .subtext {
-        font-size: 3rem;
+        font-size: 2.8rem;
+    }
+
+    .right-paragraph {
+        padding: 0;
     }
 }
 
