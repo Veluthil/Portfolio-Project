@@ -68,18 +68,18 @@ hr {
     pointer-events: none;
 }
 
-@media only screen and (max-width: 768px) {
-    body .cursor {
-        display: none;
-    }
+@media (hover: none) {
+ .cursor {
+    pointer-events: none;
+ }
 
-    .cursor-outer {
-        display: none;
-    }
+ .cursor-outer {
+    display: none;
+ }
 
-    .cursor-inner {
-        display: none;
-    }
+ .cursor-inner {
+     display: none;
+ }
 }
 
 .cursor-outer {
