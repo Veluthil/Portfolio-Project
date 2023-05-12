@@ -451,10 +451,6 @@ div.button-social:active {
     color: red;
     text-decoration: none;
     font-size: 3rem;
-    display: block;
-	position: relative;
-	line-height: 5vh;
-	margin-bottom: 4vh;
 }
 
 .hyperlink {
@@ -471,58 +467,22 @@ div.button-social:active {
     text-decoration: none;
 }
 
-a.project > div {
-	position: absolute;
-	padding: 0;
-	margin: 0;
-	left: -50px;
-	top: -300px;
-	opacity: 0;
-	height: 0;
-	overflow: hidden;
-	/* Enable transitions */
-	-webkit-transition: all .3s ease .15s;
-	-moz-transition: all .3s ease .15s;
-	-o-transition: all .3s ease .15s;
-	-ms-transition: all .3s ease .15s;
-	transition: all .3s ease .15s;
-}
-
-a.project > div img {
-	padding: 8px;
-	margin-left: 20px;
-	background-color: rgba(255, 255, 255, 0.1);
-	-webkit-border-radius: 5px;
-   	   -moz-border-radius: 5px;
-	    	border-radius: 5px;
-	-webkit-box-sizing:border-box;
-	   -moz-box-sizing:border-box;
-			box-sizing:border-box;
-}
-a.project:hover > div {
-	opacity: 1;
-	height: 500px;
-	padding: 8px;
-	z-index: 1;
+.project {
+  position: relative;
 }
 
 .project-img {
-    max-width: 60%;
-    height: auto;
+  position: absolute;
+  max-width: 80vh;
+  top: -35vh;
+  left: 30vh;
+  transform: translate(-50%, -10%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 
-@media only screen and (max-width: 1100px) {
-    a.project: {
-        display: none;
-    }
-
-    div img {
-        display: none;
-    }
-
-    .project-img {
-        display: none;
-    }
+.project:hover .project-img {
+  opacity: 1;
 }
 
 /* CONTACT PAGE */

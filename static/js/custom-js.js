@@ -10,7 +10,5 @@ $(document).ready(function() {
       $("#banner").show();
     }
     lastScrollTop = currScrollTop;
-
   });
-
 });
