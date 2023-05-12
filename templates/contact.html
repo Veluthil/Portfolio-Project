@@ -46,6 +46,10 @@
     <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
             <h2 style="color: white">Send me a message:</h2>
+                  {% if msg_sent: %}
+            <p>Message sent. Thanks!</p>
+            <p>I will answer you as soon as possible.</p>
+            {% endif %}
             <br>
             {% with messages = get_flashed_messages() %}
             {% if messages %}
@@ -94,10 +98,6 @@
                 </button>
             </form>
             <br>
-            {% if msg_sent: %}
-            <p>Message sent. Thanks!</p>
-            <p>I will answer you as soon as possible.</p>
-            {% endif %}
             <br>
             <h3>You can also reach me through any of the platforms listed below:</h3>
             <br>

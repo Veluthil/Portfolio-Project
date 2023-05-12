@@ -8,8 +8,8 @@ import bleach
 
 # DOTENV
 load_dotenv("D:/Programming/PythonEnV/.env.txt")
-MY_EMAIL = os.getenv("MY_EMAIL")
-PASSWORD = os.getenv("PASSWORD")
+MY_EMAIL = os.getenv("EC_YOUR_EMAIL")
+PASSWORD = os.getenv("PORTFOLIO_SECRET_KEY")
 
 app = Flask(__name__)
 app.secret_key = os.getenv("SECRET_KEY")
