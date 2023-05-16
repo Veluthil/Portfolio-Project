@@ -33,6 +33,8 @@
                     My enthusiasm for coding, paired with a strong cup of coffee, drives me to create elegant and
                     visually appealing websites and applications.
                 </p>
+                <div class="cursor-outer"></div>
+                <div class="cursor-inner"></div>
             </div>
         </div>
     </div>
@@ -40,21 +42,5 @@
         <script>document.write(/\d{4}/.exec(Date())[0])</script>
     </p>
 </div>
-<div class="cursor-outer"></div>
-<div class="cursor-inner"></div>
-<script>
-                    const cursor = document.querySelector(".cursor-inner");
-                    const cursor2 = document.querySelector(".cursor-outer");
-                    document.addEventListener("mousemove", e=>{
-                    cursor.style.top = e.clientY + "px";
-                    cursor.style.left = e.clientX + "px";
-
-                    cursor2.style.top = e.clientY + "px";
-                    cursor2.style.left = e.clientX + "px";
-                    })
-</script>
-
-</div>
-
 
 {% include "footer.html" %}
