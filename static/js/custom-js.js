@@ -1,14 +1,14 @@
-$(document).ready(function() {
-  var banner_height = $("#navscroll").height();
-  var lastScrollTop = 0;
-  $(window).scroll(function() {
-    var scroll = $(window).scrollTop();
-    var currScrollTop = $(this).scrollTop();
-    if (scroll >= banner_height && currScrollTop > lastScrollTop) {
-      $("#banner").hide();
-    } else {
-      $("#banner").show();
-    }
-    lastScrollTop = currScrollTop;
-  });
-});
+let prevScrollpos = window.pageYOffset;
+const navbar = document.getElementById("mainNav");
+
+window.onscroll = function() {
+  const currentScrollPos = window.pageYOffset;
+
+  if (prevScrollpos > currentScrollPos) {
+    navbar.style.top = "0";
+  } else {
+    navbar.style.top = `-${navbar.offsetHeight}px`;
+  }
+
+  prevScrollpos = currentScrollPos;
+}
