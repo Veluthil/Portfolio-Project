@@ -12,3 +12,13 @@ window.onscroll = function() {
 
   prevScrollpos = currentScrollPos;
 }
+
+const cursor = document.querySelector(".cursor-inner");
+const cursor2 = document.querySelector(".cursor-outer");
+document.addEventListener("mousemove", e=>{
+    cursor.style.top = e.clientY + "px";
+    cursor.style.left = e.clientX + "px";
+
+    cursor2.style.top = e.clientY + "px";
+    cursor2.style.left = e.clientX + "px";
+})
