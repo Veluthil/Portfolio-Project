@@ -113,6 +113,10 @@ p:hover ~ .cursor-inner {
     font-size: 1.7rem;
 }
 
+.navbar-main {
+    z-index: 1;
+}
+
 .nav-item {
     margin: 0 0 0 1.5rem;
     background: black;
@@ -184,6 +188,7 @@ footer .copyright {
     font-weight: 600;
     font-size: 1rem;
     text-decoration: none;
+    z-index: 1;
 }
 
 .name:hover {
