@@ -408,6 +408,12 @@ div.button-social:active {
     color: rgba(255, 255, 255, 0.1);
 }
 
+@media only screen and (max-width: 1100px) {
+    .ribbons {
+         display: none;
+    }
+}
+
 /* ABOUT PAGE */
 
 .subtitle {
