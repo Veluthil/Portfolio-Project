@@ -42,12 +42,6 @@ h4 {
     margin-top: 1.8vh
 }
 
-@media only screen and (max-width: 768px) {
-    p, h2, h3, h4 {
-        padding: 0.2rem 2rem;
-    }
-}
-
 section {
     width: 100%;
 }
@@ -69,17 +63,17 @@ hr {
 }
 
 @media (hover: none) {
- .cursor {
-    pointer-events: none;
- }
+    .cursor {
+       pointer-events: none;
+    }
 
- .cursor-outer {
-    display: none;
- }
+    .cursor-outer {
+       display: none;
+    }
 
- .cursor-inner {
-     display: none;
- }
+    .cursor-inner {
+        display: none;
+    }
 }
 
 .cursor-outer {
@@ -126,11 +120,6 @@ ul.navbar-nav a:hover {
     color: red !important;
 }
 
-@media (max-width: 768px) {
-    nav.navbar {
-      background: black;
-  }
-}
 
 /* FOOTER */
 
@@ -196,6 +185,12 @@ footer .copyright {
     text-decoration: none;
 }
 
+@media only screen and (max-width: 1100px) {
+  .name {
+    display: none;
+  }
+}
+
 /* HOME PAGE */
 
 .lines {
@@ -207,12 +202,6 @@ footer .copyright {
     margin: auto;
     width: 90vw;
     z-index: -1;
-}
-
-@media only screen and (max-width: 768px) {
-    .lines {
-        display: none;
-    }
 }
 
 .line {
@@ -378,32 +367,6 @@ footer .copyright {
     4%, 100% {  text-shadow: none; transform: none; }
 }
 
-@media only screen and (max-width: 768px) {
-    .index {
-        padding: 3rem 1rem;
-    }
-
-    .stack h1 {
-        font-size: 4rem;
-        animation: none;
-        color: red;
-    }
-
-    .subtext {
-        font-size: 2.8rem;
-    }
-
-    .right-paragraph {
-        padding: 0;
-        width: 100%;
-        text-align: right;
-    }
-
-    .copyright-main {
-        text-align: center;
-    }
-}
-
 /* RIBBONS */
 
 #btn1 {
@@ -457,6 +420,7 @@ div.button-social:active {
     color: red;
     text-decoration: none;
     font-size: 3rem;
+    position: relative;
 }
 
 .stack-project {
@@ -478,23 +442,20 @@ div.button-social:active {
     text-decoration: none;
 }
 
-.project {
-  position: relative;
-}
-
 .project-img {
-  position: absolute;
-  max-width: 80vh;
-  top: -35vh;
-  left: 30vh;
-  transform: translate(-50%, -10%);
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+    position: absolute;
+    max-width: 80vh;
+    top: -35vh;
+    left: 30vh;
+    transform: translate(-50%, -10%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .project:hover .project-img {
   opacity: 1;
 }
+
 
 /* CONTACT PAGE */
 
@@ -534,12 +495,175 @@ div.button-social:active {
     text-decoration: none;
 }
 
-@media only screen and (max-width: 1100px) {
-  .name {
-    display: none;
-  }
+/* MEDIA SETTINGS */
 
-  .ribbons {
-    display: none;
-  }
+@media (hover: none) {
+    .cursor {
+       pointer-events: none;
+    }
+
+@media only screen and (max-width: 1100px) {
+    p, h2, h3, h4 {
+        padding: 0.2rem 2rem;
+    }
+
+    h2 {
+     font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .name {
+      display: none;
+    }
+
+    .stack h1 {
+          font-size: 3.5rem;
+    }
+
+    .subtext {
+          font-size: 2rem;
+    }
+
+    .ribbons {
+      display: none;
+    }
+
+    .stack-project {
+      font-size: 1.5rem;
+    }
+
+    .main-p {
+        font-size: 1rem;
+    }
+
+    .contact {
+        font-size: 2rem;
+    }
+
+    .main {
+        font-size: 1rem;
+    }
+
+    .project {
+        font-size: 1.5rem;
+    }
+
+    .stack-project {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    nav.navbar {
+      background: black;
+    }
+
+    p, h2, h3, h4 {
+        padding: 0.2rem 2rem;
+    }
+
+    .lines {
+        display: none;
+    }
+
+    .index {
+        padding: 3rem 1rem;
+    }
+
+    .stack h1 {
+        font-size: 4rem;
+    }
+
+    .subtext {
+        font-size: 2.8rem;
+    }
+
+    .right-paragraph {
+        padding: 0;
+        width: 100%;
+        text-align: right;
+    }
+
+    .copyright-main {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    p {
+        font-size: 1rem;
+    }
+
+    .index {
+        padding: 3rem 1rem;
+    }
+
+    .stack h1 {
+        font-size: 3rem;
+    }
+
+    .subtext {
+        font-size: 2.3rem;
+    }
+
+    .main-p {
+        font-size: 1.2rem;
+    }
+
+    .contact {
+        font-size: 2.5rem;
+    }
+
+    .main {
+        font-size: 1rem;
+    }
+
+    .project {
+        font-size: 1.5rem;
+    }
+
+    .stack-project {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 290px) {
+    p {
+        font-size: 0.8rem;
+    }
+
+    .index {
+        padding: 3rem 1rem;
+    }
+
+    .stack h1 {
+        font-size: 2rem;
+    }
+
+    .subtext {
+        font-size: 1.3rem;
+    }
+
+    .main-p {
+        font-size: 0.8rem;
+    }
+
+    .contact {
+        font-size: 2rem;
+    }
+
+    .main {
+        font-size: 1rem;
+    }
+
+    .project {
+        font-size: 1.5rem;
+    }
+
+    .stack-project {
+        font-size: 0.8rem;
+    }
 }
