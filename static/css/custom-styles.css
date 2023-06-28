@@ -143,8 +143,8 @@ footer .list-inline {
 }
 
 footer .copyright {
-    font-size: 14px;
-    margin-bottom: 0;
+    font-size: 2vh;
+    margin-bottom: 1.2vh;
     text-align: center;
 }
 
