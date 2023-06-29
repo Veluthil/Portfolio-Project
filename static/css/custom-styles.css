@@ -439,8 +439,7 @@ div.button-social:active {
 }
 
 .hyperlink:hover {
-    color: white;
-    font-weight: 900;
+    color: grey;
 }
 
 .project:hover {
