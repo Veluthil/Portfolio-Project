@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect, url_for, flash, request, abort
+from flask import render_template, redirect, url_for, flash, request
 from flask_bootstrap import Bootstrap5
 from flask import Flask
 import smtplib
