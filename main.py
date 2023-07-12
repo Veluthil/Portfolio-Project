@@ -1,7 +1,7 @@
 from flask import render_template, redirect, url_for, flash, request
 from flask_bootstrap import Bootstrap5
 from flask import Flask
-import smtplib
+from flask_mail import Mail, Message
 import os
 from dotenv import load_dotenv
 import bleach
@@ -9,14 +9,22 @@ import bleach
 # DOTENV
 load_dotenv("D:/Programming/PythonEnV/.env.txt")
 MY_EMAIL = os.getenv("EC_YOUR_EMAIL")
-PASSWORD = os.getenv("PORTFOLIO_SECRET_KEY")
 
 app = Flask(__name__)
 app.secret_key = os.getenv("SECRET_KEY")
 bootstrap = Bootstrap5(app)
 
+app.config['MAIL_SERVER'] = 'smtp.gmail.com'
+app.config['MAIL_PORT'] = 587
+app.config['MAIL_USE_TLS'] = True
+app.config['MAIL_USERNAME'] = os.getenv("EC_YOUR_EMAIL")
+app.config['MAIL_PASSWORD'] = os.getenv("PORTFOLIO_SECRET_KEY")
+app.config['MAIL_DEFAULT_SENDER'] = os.getenv("EC_YOUR_EMAIL")
 
-##SANITIZING HTML
+mail = Mail(app)
+
+
+# SANITIZING HTML
 def strip_invalid_html(content):
     allowed_tags = ['a', 'abbr', 'acronym', 'address', 'b', 'br', 'div', 'dl', 'dt',
                     'em', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'hr', 'i', 'img',
@@ -67,15 +75,11 @@ def contact():
 
 
 def send_mail(name, email, phone, message):
-    with smtplib.SMTP("smtp.gmail.com") as connection:
-        connection.starttls()
-        connection.login(user=MY_EMAIL, password=PASSWORD)
-        email_message = f"Subject:New Message\n\nName: {name}\nEmail: {email}\nPhone: {phone}\nMessage: {message}"
-        connection.sendmail(
-            from_addr=MY_EMAIL,
-            to_addrs=MY_EMAIL,
-            msg=email_message
-        )
+    recipients = [MY_EMAIL]
+    content = Message('Portfolio Mail', recipients=recipients)
+    content.body = f"Name: {name}\nEmail: {email}\nPhone: {phone}\nMessage: {message}"
+    mail.send(content)
+    return 'Email sent'
 
 
 if __name__ == "__main__":
