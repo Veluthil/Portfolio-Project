@@ -12,7 +12,7 @@ Portfolio Project is a website created with Flask framework, Bootstrap 5, CSS, H
 
 ## Features
 - Information about me and my programming work
-- Email form for visitors to send me messages via SMTP
+- Email form for visitors to send me messages via Flask-Mail
 - HTML sanitizer to parse and sanitize client input for added cybersecurity
 
 ## Deployment
