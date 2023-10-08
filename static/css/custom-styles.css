@@ -422,6 +422,10 @@ div.button-social:active {
 
 /* PROJECTS PAGE */
 
+.p-cursive {
+    font-style: italic;
+}
+
 .project {
     color: red;
     text-decoration: none;
