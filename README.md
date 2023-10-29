@@ -19,8 +19,9 @@ Portfolio Project is a website created with Flask framework, Bootstrap 5, CSS, H
 This project is deployed on Render and can be accessed at https://mboradyn.onrender.com.
 
 ## Preview
-![portfolio-ss-1](https://github.com/Veluthil/Portfolio-Project/assets/108438343/69b54b8a-d4e5-49fd-9d0e-ac6e519c36d9)
-![portfolio-ss-2](https://github.com/Veluthil/Portfolio-Project/assets/108438343/6cb84bf8-19c0-4e21-8097-2fc7d3d805ad)
+![portfolio-1](https://github.com/Veluthil/Portfolio-Project/assets/108438343/966e1595-3de6-41c2-a7ed-e33f6c05b464)
+![portfolio-2](https://github.com/Veluthil/Portfolio-Project/assets/108438343/5e898c80-38dc-4c7a-be0b-649871530c26)
+
 
 
 ## Future Development
