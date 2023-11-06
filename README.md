@@ -8,10 +8,10 @@
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![Render](https://img.shields.io/badge/Render-%46E3B7.svg?style=for-the-badge&logo=render&logoColor=white)
 
-Portfolio Project is a website created with Flask framework, Bootstrap 5, CSS, HTML, and JavaScript. Its purpose is to act as a source of information about my programming work and also to allow visitors to check out my other websites and programs through attached hyperlinks.
+Portfolio Project is a website created with Flask framework, Bootstrap 5, CSS, HTML, and JavaScript. Its purpose is to act as a source of information about my programming/professional work and also to allow visitors to check out my other websites and programs through attached hyperlinks.
 
 ## Features
-- Information about me and my programming work.
+- Information about me, my programming and professional work.
 - Email form for visitors to send me messages via Flask-Mail.
 - HTML sanitizer to parse and sanitize client input for added cybersecurity.
 
