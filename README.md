@@ -11,7 +11,7 @@
 Portfolio Project is a website created with Flask framework, Bootstrap 5, CSS, HTML, and JavaScript. Its purpose is to act as a source of information about my programming/professional work and also to allow visitors to check out my other websites and programs through attached hyperlinks.
 
 ## Features
-- Information about me, my programming and professional work.
+- Information about me, my DevOps, programming and professional work.
 - Email form for visitors to send me messages via Flask-Mail.
 - HTML sanitizer to parse and sanitize client input for added cybersecurity.
 
