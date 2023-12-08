@@ -25,7 +25,7 @@ This project is deployed on Render and can be accessed at https://mboradyn.onren
 
 
 ## Future Development
-I plan to further develop this website by adding more content, showcasing programming examples, improving the design and user experience, and incorporating additional features to make it more engaging and useful to visitors.
+I plan to further develop this website by adding more content, showcasing programming or DevOps examples, improving the design and user experience, and incorporating additional features to make it more engaging and useful to visitors.
 
 ## Acknowledgements
 - <a href="https://flask.palletsprojects.com/en/2.3.x/">Flask</a>
